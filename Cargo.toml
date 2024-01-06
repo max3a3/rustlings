@@ -1,3 +1,4 @@
+workspace = { members = ["exercises/ggame/guessing"] }
 [package]
 name = "rustlings"
 description = "Small exercises to get you used to reading and writing Rust code!"
@@ -19,6 +20,7 @@ serde_json = "1.0.81"
 home = "0.5.3"
 glob = "0.3.0"
 clap = { version = "4.4.0", features = ["derive"] }
+rand = "0.8.3"
 
 [[bin]]
 name = "rustlings"

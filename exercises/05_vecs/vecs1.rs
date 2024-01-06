@@ -11,10 +11,10 @@
 
 fn array_and_vec() -> ([i32; 4], Vec<i32>) {
     let a = [10, 20, 30, 40]; // a plain array
-    let v = // TODO: declare your vector here with the macro for vectors
+    let v = a.to_vec(); // declare a vector using the vec! macro and initialize it with the same elements as the array a
 
     (a, v)
-}
+} 
 
 #[cfg(test)]
 mod tests {
