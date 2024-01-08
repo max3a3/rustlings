@@ -9,7 +9,7 @@
 
 // I AM NOT DONE
 
-#[derive(Debug)]
+#[derive(Debug)] 
 struct Package {
     sender_country: String,
     recipient_country: String,
@@ -31,12 +31,16 @@ impl Package {
         }
     }
 
-    fn is_international(&self) -> ??? {
-        // Something goes here...
+    fn is_international(&self) -> bool {
+        self.sender_country != self.recipient_country
     }
 
-    fn get_fees(&self, cents_per_gram: u32) -> ??? {
-        // Something goes here...
+    fn get_fees(&self, cents_per_gram: u32) -> u32 {
+        let d:i32=cents_per_gram;
+
+        return cents_per_gram*self.weight_in_grams;
+
+
     }
 }
 
