@@ -24,7 +24,7 @@ impl Package {
             panic!("Can not ship a package with weight below 10 grams.")
         } else {
             Package {
-                sender_country,
+                sender_country, 
                 recipient_country,
                 weight_in_grams,
             }
