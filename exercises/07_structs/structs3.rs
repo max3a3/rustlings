@@ -7,7 +7,7 @@
 // Execute `rustlings hint structs3` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM NOT DONE
+// I AM  DONE
 
 #[derive(Debug)] 
 struct Package {
@@ -36,7 +36,6 @@ impl Package {
     }
 
     fn get_fees(&self, cents_per_gram: u32) -> u32 {
-        let d:i32=cents_per_gram;
 
         return cents_per_gram*self.weight_in_grams;
 
