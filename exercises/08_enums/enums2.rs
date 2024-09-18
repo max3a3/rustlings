@@ -27,11 +27,19 @@ fn main() {
     let messages = [
         Message::Move { x: 10, y: 30 },
         Message::Echo(String::from("hello world")),
+        Message::Echo(String::from("x world")),
         Message::ChangeColor(200, 255, 255),
         Message::Quit,
     ];
 
     for message in &messages {
         message.call();
+    }
+
+    let msg1 = Message::Echo(String::from("hello world"));
+
+    match msg1 {
+        Message::Echo(text) => println!("Echo: {}", text),
+        _ => (),
     }
 }
