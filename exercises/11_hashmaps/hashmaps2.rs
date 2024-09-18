@@ -14,7 +14,7 @@
 // Execute `rustlings hint hashmaps2` or use the `hint` watch subcommand for a
 // hint.
 
-// I AM DONE
+// I AM DONE 
 
 use std::collections::HashMap;
 
@@ -44,11 +44,11 @@ fn fruit_basket(basket: &mut HashMap<Fruit, u32>) {
             ;
         }
         else {
-            basket.insert(fruit,1);
+            basket.insert(fruit,20);
         }
     }
 }
-
+ 
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -85,7 +85,8 @@ mod tests {
         let mut basket = get_fruit_basket();
         fruit_basket(&mut basket);
         let count = basket.values().sum::<u32>();
-        assert!(count > 11);
+        println!("basket Count: {}", count);
+        assert!(count > 31);
     }
     
     #[test]
