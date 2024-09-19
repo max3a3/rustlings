@@ -30,3 +30,5 @@ path = "src/main.rs"
 assert_cmd = "2.0.12"
 predicates = "3.0.3"
 glob = "0.3.0"
+
+# run --package rustlings --bin rustlings watch
